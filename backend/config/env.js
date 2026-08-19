@@ -4,7 +4,7 @@ const dotenvResult = require('dotenv').config();
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const isProd = NODE_ENV === 'production';
 
-const DEFAULT_MONGODB_URI = 'mongodb://127.0.0.1:27017/fixhub_repairs';
+const DEFAULT_MONGODB_URI = 'mongodb+srv://fixhub-repairs:<db_password>@cluster0.ob1kysj.mongodb.net/?appName=Cluster0';
 const DEFAULT_JWT_SECRET = 'dev-only-insecure-secret-change-me-before-deploying';
 
 if (dotenvResult.error) {
